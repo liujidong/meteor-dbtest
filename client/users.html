@@ -3,8 +3,7 @@
 	<ul>
 		<!-- 循环处理users数组 -->
 		{{#each users}}
-		<!-- 显示每条数据中的name和age -->
-		<li>name:{{name}},age:{{age}}</li>
+			{{>useritem}}
 		{{/each}}
 	</ul>
 </template>
