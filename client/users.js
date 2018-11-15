@@ -1,9 +1,8 @@
+import {Users} from '../lib/collection/Users.js';
 Template.users.helpers({
 	users: function(){
-		//返回静态模拟数据
-		return [
-		{name:'bill',age:20},
-		{name:'joy',age:22}
-		];
+		//调用数据库对象，执行查询
+		//find()返回json数据
+		return Users.find();
 	}
 });
